@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#4ba9e9, #4ba9e9 50%,
+    #fff 50%, #fff 100%);
+}
+.card {
+    width: 600px;
+    height: 380px;
+    background-color: #000;
+    position: relative;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+.card .imgbx {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.imgbx img {
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+}
+img:hover{
+    transform: rotate(-35deg) translateX(-20px);
+}
+.card .detalis{
+    width: 300px;
+    height: 100%;
+    background-color: #4ba9e9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+    flex-direction: column;
+}
+.card .detalis::before {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+.detalis h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 20px;
+    letter-spacing: .7px;
+    font-weight: 600;
+}
+.detalis h3 span {
+    text-transform: none;
+    font-size: 0.6em;
+    font-weight: 300;
+    opacity: .85;
+    
+}
+.detalis h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+    letter-spacing: 1px;
+}
+.detalis p {
+    color: #fff;
+    opacity: .85;
+}
+ul {
+   display: flex;
+   gap: 10px; 
+}
+.detalis li {
+    color:#fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    font-weight: 500;
+    opacity: .7;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.detalis li:hover {
+    color: #4ba9e9;
+    background-color: #fff;
+    opacity: 1;
+
+}
+.box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.box h2 {
+    font-weight: 500;
+    color: #fff;
+}
+.box sup {
+    font-weight: 300;
+}
+.box small {
+    font-size: 18px;
+}
+.box a{
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #4ba9e9;
+    text-transform: uppercase;
+}
